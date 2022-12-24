@@ -1,6 +1,12 @@
 type Query {
   "Students list"
-  students: String
+  students: [Student!]!
+  "Student by id"
+  student(id: ID!): Student!
+  "Courses list"
+  courses: [Course!]!
+  "Course by id"
+  course(id: ID!): Course!
 }
 
 "Information about students"
@@ -10,7 +16,7 @@ type Student {
   name: String!
   email: String!
   website: String
-  course: [Course!]!
+  courses: [Course!]!
 }
 
 type Course {
