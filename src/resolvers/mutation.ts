@@ -68,7 +68,6 @@ const mutation: IResolvers = {
       };
     },
     deleteCourse(__: void, { id }): any {
-      console.log(id);
       const deleteCourse = _.remove(database.courses, function (course) {
         return course.id === id;
       });

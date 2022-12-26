@@ -54,7 +54,7 @@ type Course {
 enum Level {
   ALL
   BEGINNER
-  INTERMEDIATE
+  MEDIUM
   ADVANCED
 }
 
